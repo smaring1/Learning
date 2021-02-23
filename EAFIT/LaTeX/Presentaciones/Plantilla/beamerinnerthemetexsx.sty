@@ -1,0 +1,52 @@
+\mode<presentation>
+
+
+\def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
+\definecolor{blueEafit}{RGB}{2, 56, 92}
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+  \fill[color=white] (0,2) rectangle (\the\paperwidth,\the\paperheight);
+  \fill[color=white] (0,0) rectangle(4.30,1.9);
+  
+  \fill[color=blueEafit] (4.40,0) rectangle(\the\paperwidth,1.9);
+  
+  \ifnum\thepage>1\relax%
+   \fill[white,opacity=1] (0,0) rectangle(\the\paperwidth,\the\paperheight);
+   \fi
+  \end{tikzpicture}
+}
+
+
+
+% Title page
+\defbeamertemplate*{title page}{texsx}[1][]
+{ 
+
+\Put(-1,-485){\color{blue}\includegraphics[height=30pt]{universidad-eafit-new.eps}}
+   \Put(-32.5,17){\color{blue}\includegraphics[width=\paperwidth]{pata-inspira-crea-transforma.pdf}}
+   \Put(210,-410){\color{blue}\includegraphics[height=3pt, width=145pt]{square.pdf}}
+
+
+   \vskip5cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=4.6cm,sep=8pt,#1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+    \end{beamercolorbox}%
+    \vskip0.3cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=4.3cm,#1]{author}
+      \usebeamerfont{author}\insertauthor%
+    \end{beamercolorbox}
+     \vskip0.2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=4.3cm,#1]{date}
+      \usebeamerfont{author}\insertdate%
+    \end{beamercolorbox}
+  \vfill
+}
+
+% Items
+\setbeamertemplate{items}[square]
+\setbeamertemplate{sections/subsections in toc}[square]
+
+\mode
+<all>

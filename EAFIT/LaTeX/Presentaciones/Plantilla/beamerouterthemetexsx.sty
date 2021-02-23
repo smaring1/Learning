@@ -1,0 +1,32 @@
+\mode<presentation>
+\def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
+
+% Frame title
+\defbeamertemplate*{frametitle}{texsx}[1][]
+{
+
+
+%\vskip1cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.0cm]{frametitle} %ht=1.2cm
+  \begin{tikzpicture}
+  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);  %ht=1.2cm
+  \fill[white] (0,0) rectangle(2.95,1.2); %ex orange
+  \fill[blueEafit] (3.05,0) rectangle(\the\paperwidth,1.2); %ht=1.2cm
+
+   \ifx\insertframesubtitle\@empty%
+      {\node[anchor=west, white,font=\large] at (3.2,0.61){\insertframetitle};}
+      \else%
+      {\node[anchor= west, white,font=\large] at (3.2,0.81){\insertframetitle};%
+       \node[anchor= west, white,font=\small] at (3.2,0.41){\insertframesubtitle};}%
+      \fi
+  \end{tikzpicture}
+
+  \end{beamercolorbox}
+    \Put(-15,69){\color{blue}\includegraphics[height=25pt]{universidad-eafit-new.eps}}
+    \Put(-34,-445){\color{blue}\includegraphics[width=\paperwidth]{pata-inspira-crea-transforma.pdf}}
+       \Put(210,47){\color{blue}\includegraphics[height=3pt, width=145pt]{square.pdf}}
+
+    
+}
+
+\mode<all>

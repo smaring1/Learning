@@ -1,0 +1,96 @@
+\documentclass[a4,12pt]{beamer}
+%\usetheme{Singapore}
+%\usecolortheme{albatross}
+\setbeamercovered{transparent=50}
+
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{rotating}
+\usepackage{verbatim} 
+\usepackage{amsmath}
+\usepackage{floatflt}
+\usepackage{subfig}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{theorem}
+\usepackage{fancyvrb}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+%\usepackage{subcaption}
+
+%\usepackage{media9}
+
+%for c syntax
+\setbeamercovered{transparent}
+\usepackage{listings}
+\transdissolve[duration=0.2]
+%\usepackage{multimedia}
+
+\captionsetup[subfloat]{labelformat=empty}
+\usetheme{texsx}
+\definecolor{gray}{RGB}{123, 123, 123}
+\definecolor{mrblue}{RGB}{2, 56, 92}
+
+\newcommand{\blue}[1] {\textcolor{mrblue}{#1}}
+\newcommand{\red}[1] {\textcolor{gray}{#1}}
+
+\title{Compiladores: \\ Lenguajes Regulares}
+
+\author{Juan F. Cardona}
+
+\date{Departmento de Informática y Sistemas\\ Universidad EAFIT}
+
+\lstset{language=C++, escapeinside={{*@}{@*}},
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{mrbrown}\ttfamily,
+                commentstyle=\color{mrblue}\ttfamily,
+                morecomment=[l][\color{mrbrown}]{\#}
+}
+
+
+
+\begin{document}
+\frame{\titlepage}
+
+
+
+\begin{frame}
+\frametitle{Filosofía de vida}
+
+\blue{``Las nuevas tecnologías acabaron con el monopolio del saber del maestro. Hoy la información
+está toda allá arriba. A un click, tú puedes bajar toda la información que quieras, en tiempo real. Yo
+creo que nunca antes la humanidad había vivido un momento tan apasionante. ¿Entonces cuál
+es el papel del maestro ahora? Es un compañero de viaje al conocimiento.''} -- Juan Luis Mejía, Eafit.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Tipos de problemas}
+\begin{itemize}
+\item \blue{Sorting}
+
+\item \blue{Searching}
+
+\item \blue{Graph problems}
+
+\item \red{String processing}
+
+\item Numerical problems
+
+\item Geometric problems
+
+\item \red{Combinatorial problems}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+\end{document}
