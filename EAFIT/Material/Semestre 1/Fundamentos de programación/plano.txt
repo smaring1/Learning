@@ -1,0 +1,6 @@
+id,genero,edad,colorPiel,estrato,sector,dgbayes,dgml,dgmed,dfconfirm,s1,r1,s2,r2,s3,r3,s4,r4,s5,r5,s6,r6
+1,masculino,30,trigueno,4,sur,diarrea,ebola,diarrea,tos,tos,no,fiebre,si,dolorcabeza,no,popo,si,,,,
+2,femenino,45,blanco,2,norte,ebola,ebola,gripa,gripa,fiebre,si,tos,si,mocos,si,dolorgarganta,si,congestionnasal,no,sangradoencias,no
+3,masculino,24,negro,5,centro,fiebreamarilla,dengue,paludismo,gripa,dolorarticulacion,si,vomito,si,ojosamarillos,no,sangradoencias,no,dolorcabeza,si,,
+4,femenino,19,negro,3,centro,gripa,gripa,gripa,gripa,dolorcabeza,si,tos,si,dolorarticulaciones,no,dolormuscular,no,,,,
+5,femenino,33,blanco,3,oriente,ebola,gripa,dengue,paludismo,tos,no,vomitosangre,si,africa,si,,,,,,

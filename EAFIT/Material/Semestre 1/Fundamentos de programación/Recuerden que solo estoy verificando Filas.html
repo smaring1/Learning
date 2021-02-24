@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="font-family: verdana, sans-serif;font-size: 12px;">
+<div>
+<div>import java.util.*;</div>
+<div>import java.math.*;</div>
+<br />
+<div>class Animal</div>
+<div>{</div>
+<div>String tipo;</div>
+<div>String nombre;</div>
+<div>String sonido;</div>
+<br />
+<div>public Animal(String miTipo, String miNombre, String miSonido)</div>
+<div>{</div>
+<div>tipo=miTipo;</div>
+<div>nombre=miNombre;</div>
+<div>sonido=miSonido;</div>
+<div>}</div>
+<br />
+<div>public String Sonido()</div>
+<div>{</div>
+<div>return sonido;</div>
+<div>}</div>
+<br />
+<div>}</div>
+<br /><br />
+<div>class Main</div>
+<div>{</div>
+<div>static enum Mode</div>
+<div>{</div>
+<div>Columna,</div>
+<div>Fila,</div>
+<div>DiagonalPrimaria,</div>
+<div>DiagonalSecundaria</div>
+<div>}</div>
+<br />
+<div>public static void main(String[] args)</div>
+<div>{</div>
+<div>String sonidoPato="Quack quack";</div>
+<div>String sonidoGato= "Miau miau";</div>
+<br />
+<div>Scanner consola = new Scanner(System.in);</div>
+<div>System.out.print("Matriz cuadrada, ingresa la base: ");</div>
+<div></div>
+<div>int n = consola.nextInt();</div>
+<div>Animal[][] matriz= new Animal[n][n];</div>
+<br />
+<div>int patos= 0;</div>
+<div>int fila=0;</div>
+<div>int columna=0;</div>
+<br />
+<div>//Animal Pato= new Animal("Pato","Donald",sonidoPato);</div>
+<div>//Animal Gato= new Animal("Gato","Tom",sonidoGato);</div>
+<br />
+<div>FillMatrix(matriz,n,sonidoGato);</div>
+<br />
+<div>while(patos&lt;n)</div>
+<div>{</div>
+<div>fila=(int)(Math.random()*n);</div>
+<div>columna=(int)(Math.random()*n);</div>
+<div>if(matriz[fila][columna].Sonido()!=sonidoPato)</div>
+<div>{</div>
+<div>matriz[fila][columna]=new Animal("Pato","Donald",sonidoPato);</div>
+<div>patos++;</div>
+<div>}</div>
+<div>}</div>
+<br />
+<div>ImprimirMatrix(matriz,n);</div>
+<br />
+<div>System.out.println();</div>
+<div>System.out.println(CheckingTrick(matriz, n, sonidoPato, Mode.Fila));</div>
+<br />
+<div>}</div>
+<br />
+<div>public static void FillMatrix(Animal[][] matrix, int n, String sonidoGato)</div>
+<div>{</div>
+<div>for(int i=0; i&lt;n;i++)</div>
+<div>{</div>
+<div>for(int j=0;j&lt;n;j++)</div>
+<div>{</div>
+<div>matrix[i][j]=new Animal("Gato","Tom",sonidoGato);</div>
+<div>}</div>
+<div>}</div>
+<div>}</div>
+<br />
+<div>public static void ImprimirMatrix(Animal[][] matrix, int n)</div>
+<div>{</div>
+<div>for(int i=0; i&lt;n;i++)</div>
+<div>{</div>
+<div>for(int j=0;j&lt;n;j++)</div>
+<div>{</div>
+<div>System.out.print("\t" +matrix[i][j].Sonido());</div>
+<div>}</div>
+<br />
+<div>System.out.println();</div>
+<div>}</div>
+<div>}</div>
+<br />
+<div>public static boolean CheckingTrick(Animal[][] matrix, int n, String sonidoPato, Mode myMode )</div>
+<div>{</div>
+<div>boolean result=true;</div>
+<div>switch(myMode)</div>
+<div>{</div>
+<div>case Fila:</div>
+<div>{</div>
+<div>for(int i=0;i&lt;n;i++)</div>
+<div>{</div>
+<div>result=true;</div>
+<div>for(int j=0;j&lt;n;j++)</div>
+<div>{</div>
+<div>if(matrix[i][j].Sonido()!=sonidoPato)</div>
+<div>{</div>
+<div>result=false;</div>
+<div>break;</div>
+<div>}</div>
+<div>}</div>
+<div>if (result)</div>
+<div>break;</div>
+<div></div>
+<div>}</div>
+<div>if(result)</div>
+<div>{</div>
+<div>return true;</div>
+<div>}</div>
+<div>else</div>
+<div>return false;</div>
+<div></div>
+<div>}</div>
+<div>default:</div>
+<div>return false;</div>
+<div>}</div>
+<div></div>
+<div>}</div>
+<div>}</div>
+</div>
+</body>
+</html>
