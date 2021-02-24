@@ -1,1 +1,5 @@
--c odoo.conf -d datatest --dev=all
+#Inicializar Odoo
+sudo ./odoo-bin -c odoo.conf -d datatest --dev=all
+
+#Crear un nuevo módulo
+sudo ./odoo-bin  scaffold custom_crm custom_addons
