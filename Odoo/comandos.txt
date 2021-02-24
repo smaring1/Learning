@@ -1,0 +1,1 @@
+-c odoo.conf -d datatest --dev=all
