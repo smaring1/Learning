@@ -3,3 +3,6 @@ sudo ./odoo-bin -c odoo.conf -d datatest --dev=all
 
 #Crear un nuevo módulo
 sudo ./odoo-bin  scaffold custom_crm custom_addons
+
+#Iconos para las vistas
+https://fontawesome.com/icons?d=gallery&p=2

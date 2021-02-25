@@ -1,0 +1,4 @@
+#Inicializar Odoo
+-c odoo.conf -d datatest --dev
+=all
+sudo ./odoo-bin  scaffold custom_crm custom_addons
