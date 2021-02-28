@@ -1,0 +1,42 @@
+%package co.edu.eafit.dis.st0270.s20201.smglorc
+%{
+
+%}
+%class JaccParser
+%interface JaccTookens
+%get	  lexer.getToken()
+%next   lexer.nextToken()
+%token  FLECHA COMA PALO MA MI
+%start  G
+%%
+G : Ru
+  ;
+
+Ru : NT FLECHA P COMA Ru
+  | NT FLECHA P
+  |
+  ;
+  
+P : RH PALO P
+  | RH
+  |
+  ;
+
+RH : T NT
+  | NT
+  ;
+
+T : MI
+  ;
+
+NT : MA
+    ;
+
+%%
+private JaccLexer lexer;
+public JaccParser(JaccLexer lexer) {
+  this.lexer = lexer;
+}
+
+private void yyerror(String msg) {
+}
