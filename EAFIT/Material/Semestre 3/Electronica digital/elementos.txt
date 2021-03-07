@@ -1,0 +1,9 @@
+9 x protoboard
+9 x cajas de htas
+cables UTP
+9 x arduino mega
+9 x LED RGB Maqueta
+9 x maqueta potenciometro
+9 x LM35 maqueta
+9 x 7 segmentos catodo comun para protoboard
+63 x resistencias 330, 220 o 1k

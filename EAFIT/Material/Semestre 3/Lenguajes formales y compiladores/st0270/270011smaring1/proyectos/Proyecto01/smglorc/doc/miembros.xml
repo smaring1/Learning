@@ -1,0 +1,16 @@
+<grupo>
+  <nombre>abcdefg</nombre>
+  <miembros>
+    <miembro>
+      <nombre>Simon Marin Giraldo</nombre>
+      <codigo>201910050010</codigo>
+      <email>smaring1@eafit.edu.co</email>
+    </miembro>
+    <miembro>
+      <nombre>Liz Oriana Rodrigues Cruz</nombre>
+      <codigo>201910027010</codigo>
+      <email>lorodriguc@eafit.edu.co</email>
+    </miembro>
+  </miembros>
+  <mainclass clase="Main" package="co.edu.eafit.dis.st0270.20201.abcdefg/>
+</grupo>
